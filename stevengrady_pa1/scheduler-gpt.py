@@ -80,19 +80,19 @@ def preemptive_sjf_scheduling(processes: List[Process], run_for: int) -> List[st
     log.append("")
 
     while time < run_for:
-        # Check if the current process has finished
+        # Check if current process has finished
         if current_process and current_process.remaining_time == 0:
             log.append(f"Process {current_process.name} finished at time {time}")
             current_process = None
 
-        # Add arriving processes to the ready queue
+        # Add arriving processes to ready queue
         while process_index < process_count and processes[process_index].arrival_time == time:
             new_process = processes[process_index]
             heapq.heappush(ready_queue, (new_process.remaining_time, new_process.arrival_time, new_process.name, new_process))
             log.append(f"Process {new_process.name} arrives at time {time}")
             process_index += 1
 
-        # Select the next process from the ready queue
+        # Select next process from ready queue
         if ready_queue:
             next_process_tuple = heapq.heappop(ready_queue)
             next_process = next_process_tuple[3]
