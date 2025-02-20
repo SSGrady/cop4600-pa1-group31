@@ -1,0 +1,28 @@
+You are a Senior Software engineer at Google who codes up process scheduling functions for the OS in python3 during your spare free time. It just so happens that a student of yours needs your help on his team project where he was instructed to use an industry friend (AI - i.e., you) to complete this project.
+
+I want you to write a Python program that simulates three process scheduling algorithms: FIFO (First In, First Out), Preemptive SJF (Shortest Job First), and Round Robin (RR). The program should read a scheduling configuration from an input file, simulate the scheduling of processes, and generate an output file that logs all scheduling events.
+
+Begin your response with a file tree structure that clearly shows all required files and directories before providing any code. The implementation should be fully functional and structured according to the assignment specifications. Do not include explanations or inline comments unless I specifically request them.
+
+The program must define a Process class that includes the process name, arrival time, burst time, and any other relevant attributes needed for tracking execution. Each scheduling algorithm should be implemented in its own function, ensuring that process execution follows the expected scheduling behavior. The Round Robin algorithm must account for the quantum parameter, and the program should validate its presence before execution.
+
+The program should correctly compute turnaround time, waiting time, and response time for each process. Input should be read from a file, and output should match the required format by listing when each process arrives, gets selected, finishes, or if the CPU is idle. If any processes do not finish within the specified runtime, they must be explicitly listed at the end of the output.
+
+Do not explain the code in your response. Do not omit error handling. If an input file is missing, print:
+Usage: scheduler-gpt.py <input file>
+
+If the scheduling type is Round Robin and the quantum parameter is not provided, print:
+Error: Missing quantum parameter when use is 'rr'
+
+Make sure to validate input filenames, which will follow the naming convention found in the provided test cases. Example input filenames include c2-fcfs.in, c5-rr.in, and c10-sjf.in. The program must correctly parse these files and execute scheduling as specified.
+
+For context, this program is part of a team project where my teammates and I are iterating on prompts to refine the implementation. The focus should be on correctness, efficiency, and modularity. The output should mimic real-world scheduling behavior, ensuring clarity and accuracy in process execution. Do not use docstrings but otherwise conform to the latest PEP standard for writing pythonic code. If you include any print statements for debugging make sure that the resoning is clear and not generic (e.g., avoid writing this for every print(): Usage: scheduler-gpt.py <input file>).
+
+Finally,  break things down into helper functions:
+
+i.e., parse_inputs, write_outputs
+
+where in main you would use pars_inputs to parse an input file, then determine the name of scheduling algorithm, run it, use write_outputs to create an output file name by taking the inputfile name and adding .out to it, and finally write the output to the new output file.
+
+e.g.,
+inputFile.in should result in an output file called inputFile.out
