@@ -1,0 +1,36 @@
+10 processes
+Using preemptive Shortest Job First
+
+Process P01 arrives at time 0
+Process P01 selected at time 0
+Process P01 finished at time 5
+Process P02 arrives at time 5
+Process P02 selected at time 5
+Process P03 arrives at time 9
+Process P03 selected at time 9
+Process P04 arrives at time 10
+Process P05 arrives at time 11
+Process P03 finished at time 12
+Process P06 arrives at time 12
+Process P04 selected at time 12
+Process P04 finished at time 16
+Process P06 selected at time 16
+Process P07 arrives at time 18
+Process P06 finished at time 20
+Process P02 selected at time 20
+Process P02 finished at time 25
+Process P08 arrives at time 25
+Process P08 selected at time 25
+Process P08 finished at time 29
+Process P07 selected at time 29
+Process P09 arrives at time 30
+Process P07 finished at time 34
+Process P10 arrives at time 34
+Process P09 selected at time 34
+Process P09 finished at time 41
+Process P05 selected at time 41
+Process P05 finished at time 49
+Process P10 selected at time 49
+Process P10 finished at time 59
+CPU idle at time 59
+Finished at time 60
