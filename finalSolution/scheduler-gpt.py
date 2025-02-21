@@ -1,3 +1,6 @@
+# Steven Grady, Braden Voyles, Jovanny Rebollar, Dallas Moody, Kiyoshi Iwasaki
+# COP4600 - PA1, Group 31
+
 import sys
 import os
 import re
