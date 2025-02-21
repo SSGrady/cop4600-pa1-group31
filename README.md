@@ -31,3 +31,9 @@ e.g., input
 ```
 python3 finalSolution/scheduler-gpt.py pa1-testfiles-1/c5-fcfs.in
 ```
+## Validation
+Take your new output file and compare it to the existing unit case
+```
+# continuing with our previous example
+diff output_files/c5-fcfs.out pa1-testfiles-1/c5-fcfs.out
+```
