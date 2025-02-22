@@ -220,6 +220,8 @@ def write_output(filename, events, processes, scheduling_type, quantum=None):
                 p.turnaround_time = p.finish_time - p.arrival
                 p.wait_time = p.turnaround_time - p.burst
                 file.write(f"{p.name} wait {p.wait_time:3} turnaround {p.turnaround_time:3} response {p.response_time:3}\n")
+            else:
+                file.write(f"{p.name} did not finish\n")  # For unfinished processes
 
 def main():
     if len(sys.argv) != 2:
