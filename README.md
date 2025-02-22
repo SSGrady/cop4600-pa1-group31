@@ -4,7 +4,7 @@
 This project implements various CPU scheduling algorithms as part of the OS's Programming Assignment 1. It includes implementations of 
 1. First-Come, First Serve (FCFS) ✅
 2. Pre-emptive Shortest Job First (SJF) ✅ 
-3. Round-Robin (RR) scheduling
+3. Round-Robin (RR) scheduling ✅ 
 
 ## Requirements
 
